@@ -1,0 +1,24 @@
+.MuiGrid-root img {
+    padding: 30px;
+}
+
+.MuiBox-root p#name {
+    text-align: center;
+    margin: 0;
+    font-size: 10vw;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.MuiBox-root p.text {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #939393;
+    line-height: 10px;
+    text-transform: uppercase!important;
+}
+
+.MuiGrid-root#intro-grid {
+    position: relative;
+    top: 25%;
+}
