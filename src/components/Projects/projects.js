@@ -23,7 +23,7 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         overflow: 'hidden',
         marginTop: 20,
-        paddingBottom: 20,
+        paddingBottom: 30,
     },
     gridList: {
     }
@@ -42,6 +42,10 @@ export default function Projects(){
         e.target.style.opacity = '1';
     }
 
+    const externalPage = () => {
+        window.location.assign()
+    }
+
     const preventDefault = (event) => {
         console.log(event);
     }
@@ -54,8 +58,20 @@ export default function Projects(){
             </Grid>
             <GridList cellHeight={160} className={classes.gridList} cols={3}>
                 {tileData.map((tile) => (
-                    <GridListTile key={tile.img} cols={tile.cols || 1}>
-                    <img src={tile.img} alt={tile.title} />
+                    <GridListTile 
+                        key={tile.img} 
+                        cols={tile.cols || 1} 
+                        onClick={() => {
+                            window.open(`${tile.link}`)
+                        }}
+                    >
+                        <img 
+                            src={tile.img} 
+                            alt={tile.title} 
+                            onMouseEnter={changeBackground} 
+                            onMouseLeave={normalBaackground} 
+                            style={{cursor: 'pointer', padding:0}}
+                        />
                     </GridListTile>
                 ))}
             </GridList>
