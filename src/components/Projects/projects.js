@@ -1,6 +1,6 @@
 import React, {Component}from 'react';
 //material UI
-import {Grid, GridListTile, GridList, Slide} from '@material-ui/core';
+import {Grid, GridListTile, GridList, Slide, Box} from '@material-ui/core';
 import './style.css';
 import { withStyles} from '@material-ui/core/styles';
 import tileData from './tileData'
@@ -34,12 +34,11 @@ const useStyles = theme => ({
         height: '100%',
       },
     img: {
-        objectFit: 'none',
+        objectFit: 'cover',
         width: '100%',
         height: '100%',
     },
-})
-
+});
 
 
 class Projects extends Component {
@@ -51,6 +50,7 @@ class Projects extends Component {
     changeBackground = (e) => {
         e.target.style.opacity = '0.5';
         console.log('changed')
+
       };
 
     normalBackground = (e) => {
@@ -58,34 +58,32 @@ class Projects extends Component {
     };
     
 
-
     render() {
-        const classes = withStyles();
+        const {classes} = this.props;
         return (
             <div style={divStyle}>
                 <Grid container justify='center'>
                     <h2 style={{fontWeight: 300, paddingTop: '50px'}}>PROJECTS</h2>
                 </Grid>
-                {/* <Slide direction="up" mountOnEnter> */}
-                <GridList cellHeight={200} cols={4} 
-                    style={{marginLeft: '200px', marginRight: '200px', paddingTop: '20px', paddingBottom: '20px'}}>
-                    {tileData.map((tile) => (
-
-                        <GridListTile key={tile.id} cols={tile.cols || 1}>
-                            <a className={classes.a} href={`${tile.link}`} target='_blank' rel="noopener noreferrer" >
-                                <div className='overlay' style={overlay}></div>
-                                <img 
-                                    src={tile.img} 
-                                    alt={tile.title} 
-                                    className={classes.img} 
-                                    onMouseMove={this.changeBackground} 
-                                    onMouseLeave={this.normalBackground}
-                                />
-                            </a>
-                        </GridListTile>
-                    ))}
-                </GridList>
-                {/* </Slide> */}
+                
+                <Box mx='auto' p={5}>
+                    <GridList cellHeight={200} cols={4}>
+                        {tileData.map((tile) => (
+                            <GridListTile key={tile.id} cols={tile.cols || 1}>
+                                <a className={classes.a} href={`${tile.link}`} target='_blank' rel="noopener noreferrer" >
+                                    <div className='overlay' style={overlay}></div>
+                                    <img 
+                                        src={tile.img} 
+                                        alt={tile.title} 
+                                        className={classes.img} 
+                                        onMouseMove={this.changeBackground} 
+                                        onMouseLeave={this.normalBackground}
+                                    />
+                                </a>
+                            </GridListTile>
+                        ))}
+                    </GridList>
+                </Box>
             </div>
         )
     }
