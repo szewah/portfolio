@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d61052b.chunk.css",
+    "main.js": "/static/js/main.48186c3e.chunk.js",
+    "main.js.map": "/static/js/main.48186c3e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.5cadce86.chunk.js": "/static/js/2.5cadce86.chunk.js",
+    "static/js/2.5cadce86.chunk.js.map": "/static/js/2.5cadce86.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dcdc7eec4df36d066d5cb039729f41da.js": "/precache-manifest.dcdc7eec4df36d066d5cb039729f41da.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6d61052b.chunk.css.map": "/static/css/main.6d61052b.chunk.css.map",
+    "static/js/2.5cadce86.chunk.js.LICENSE.txt": "/static/js/2.5cadce86.chunk.js.LICENSE.txt",
+    "static/media/apple.svg": "/static/media/apple.de82c45c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.5cadce86.chunk.js",
+    "static/css/main.6d61052b.chunk.css",
+    "static/js/main.48186c3e.chunk.js"
+  ]
+}
