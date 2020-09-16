@@ -7,6 +7,7 @@ const styles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         height: '100vh',
+        // backgroundColor: 'khaki'
     }
 }));
 
@@ -23,7 +24,7 @@ export default function Intro(){
                 <Box>
                     <p id="name">Szewah Chin</p>
                     <Grid container alignItems="center" justify="center">
-                        <Divider style={{backgroundColor: 'red', height: '3px', width: '70%'}}/>
+                        <Divider style={{backgroundColor: '#ffcc66', height: '3px', width: '70%'}}/>
                     </Grid>
                     <p className="text">Bringing 15 years of communications experience</p>
                     <p className="text">to Full Stack Web Development</p>
