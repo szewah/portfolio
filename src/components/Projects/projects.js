@@ -1,9 +1,9 @@
 import React, {Component}from 'react';
 //material UI
-import {Grid, GridListTile, GridList, Slide, Box} from '@material-ui/core';
+import {Grid, GridListTile, GridList,Box} from '@material-ui/core';
 import './style.css';
 import { withStyles} from '@material-ui/core/styles';
-import tileData from './tileData'
+import tileData from './tileData';
 
 
 
@@ -14,52 +14,63 @@ const divStyle = {
 }
 
 
-const overlay = {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: '100%',
-    width: '100',
-    opacity: 0,
-    transition: '.5s ease',
-    backgroundColor: '#008CBA'
-  }
-
-
 const useStyles = theme => ({
+
     a: {
         display: 'block',
-        height: '100%',
+        height: '100%', 
       },
     img: {
         objectFit: 'cover',
         width: '100%',
         height: '100%',
+        filter: 'blur(0)',
+        transition: '.5s ease',
     },
+    tile: {
+        '&:hover': {
+            cursor: 'pointer',
+            '& $box': {
+                opacity: 1,
+                width: '95%',
+                height: '93%',
+            },
+            '& $img': {
+                filter: 'blur(2px)',
+                width: '110%',
+                height: '110%',
+                opacity: '0.3'
+            },
+        },
+    },
+    box: {
+        objectFit: 'cover',
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        margin: 'auto',
+        width: '100%',
+        height: '100%',
+        color: 'black',
+        zIndex: 1,
+        opacity: 0,
+        transition: '.5s ease',
+        backgroundColor: 'white',
+    }
 });
 
 
 class Projects extends Component {
 
     state = {
-        isHovering: false,
+
     }
     
-    changeBackground = (e) => {
-        e.target.style.opacity = '0.5';
-        console.log('changed')
-
-      };
-
-    normalBackground = (e) => {
-        e.target.style.opacity = '1';
-    };
-    
-
     render() {
         const {classes} = this.props;
+
         return (
             <div style={divStyle}>
                 <Grid container justify='center'>
@@ -67,17 +78,18 @@ class Projects extends Component {
                 </Grid>
                 
                 <Box mx='auto' p={5}>
-                    <GridList cellHeight={200} cols={4}>
+                    <GridList cellHeight={250} cols={4}>
                         {tileData.map((tile) => (
-                            <GridListTile key={tile.id} cols={tile.cols || 1}>
-                                <a className={classes.a} href={`${tile.link}`} target='_blank' rel="noopener noreferrer" >
-                                    <div className='overlay' style={overlay}></div>
+                            <GridListTile key={tile.id} cols={tile.cols || 1} className={classes.tile}>
+                                <a className={classes.a} href={`${tile.link}`} target='_blank' rel="noopener noreferrer">                                   
+                                    <Box className={classes.box}>
+                                        <h4>{tile.title} - {tile.role}</h4>
+                                        <p style={{fontSize: '12px'}}>{tile.detail}</p>
+                                    </Box>                                 
                                     <img 
                                         src={tile.img} 
                                         alt={tile.title} 
-                                        className={classes.img} 
-                                        onMouseMove={this.changeBackground} 
-                                        onMouseLeave={this.normalBackground}
+                                        className={classes.img}
                                     />
                                 </a>
                             </GridListTile>
@@ -88,6 +100,8 @@ class Projects extends Component {
         )
     }
 };
+
+
 
 export default withStyles(useStyles)(Projects);
 

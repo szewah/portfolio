@@ -8,3 +8,32 @@
     paddingTop: '20px', 
     paddingBottom: '20px'
 }} */
+
+
+/* const overLay = {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '100%',
+    width: '100',
+    opacity: 0,
+    transition: '.5s ease',
+    color: 'black',
+    border: '5px solid red',
+    zIndex: 1,
+    display: 'none'
+  } */
+
+h4 {
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+
+.MuiBox-root p {
+    width: 80%;
+    margin: auto;
+    color: #939393;
+}
