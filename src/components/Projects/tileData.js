@@ -1,7 +1,7 @@
 
 const tileData = [
     {
-      img: '/static/images/retail.jpeg',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnassets.hw.net%2Fca%2F8f%2F87d01df44eefb9d7ae61ff0d482d%2F3462a44b69ae423c87ef257c980fc94a.jpg&f=1&nofb=1',
       title: 'Popshop',
       detail: 'Web App that matches retailers to landlords for popup opportunities',
       role: 'Intern',
@@ -11,7 +11,7 @@ const tileData = [
       link: 'https://www.popshop.com/'
     },
     {
-      img: '/static/images/inventory.jpeg',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWkcffU_RsdU%2Fmaxresdefault.jpg&f=1&nofb=1',
       title: 'Bamazon',
       detail: 'CLI app inspired by Amazon',
       role: 'Developer',
@@ -20,7 +20,7 @@ const tileData = [
       link: 'https://github.com/szewah/bamazon'
     },
     {
-      img: '/static/images/game.jpg',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappgrooves.com%2Fcdn%2Fmc%2FGAME_WORD%2F4_w1200.jpg&f=1&nofb=1',
       title: 'Hangman',
       detail: 'Computer generated word guess game',
       role: 'Developer',
