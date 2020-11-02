@@ -67,7 +67,7 @@ const tileData = [
       link: 'https://github.com/szewah/bluellama'
     },
     {
-      img: 'https://user-images.githubusercontent.com/32065713/97907182-e0056980-1d12-11eb-81df-6834b28d5ea0.png',
+      img: 'https://user-images.githubusercontent.com/32065713/97908438-b4837e80-1d14-11eb-8762-a41d26313476.png',
       title: 'Coin Watch',
       detail: ' A Flutter app for tracking cryptocurrencies prices',
       role: 'Developer',
