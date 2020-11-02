@@ -67,14 +67,14 @@ const tileData = [
       link: 'https://github.com/szewah/bluellama'
     },
     {
-      img: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgreenlightdev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fgreen-circuit-board-technology-animated-background-video-graphic-design-ultra-hd-4k-3840x2160_bku-kw-he_thumbnail-full01.png&f=1&nofb=1',
-      title: 'LIRI',
-      detail: ' A CLI app that finds films, bands and music',
+      img: 'https://user-images.githubusercontent.com/32065713/97907182-e0056980-1d12-11eb-81df-6834b28d5ea0.png',
+      title: 'Coin Watch',
+      detail: ' A Flutter app for tracking cryptocurrencies prices',
       role: 'Developer',
       cols: 2,
       rows: 3,
       id: 8,
-      link: 'https://github.com/szewah/liri-node-app'
+      link: 'https://github.com/szewah/coincap_flutter'
     },
   ];
   
