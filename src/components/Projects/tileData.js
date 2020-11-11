@@ -3,7 +3,7 @@ const tileData = [
     {
       img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnassets.hw.net%2Fca%2F8f%2F87d01df44eefb9d7ae61ff0d482d%2F3462a44b69ae423c87ef257c980fc94a.jpg&f=1&nofb=1',
       title: 'Popshop',
-      detail: 'Web App that matches retailers to landlords for popup opportunities',
+      detail: 'A web app that matches retailers to landlords for popup opportunities',
       role: 'Intern',
       cols: 2,
       rows: 3,
@@ -50,7 +50,7 @@ const tileData = [
     {
       img: 'https://www.digitalmusicnews.com/wp-content/uploads/2018/10/Music-Festival-Veld-Music-Festival.jpg',
       title: 'Soundbudz',
-      detail: 'A web app that brings together like-minded live music lovers',
+      detail: 'A React web app that brings together like-minded live music lovers',
       role: 'Developer',
       rows: 3,
       id: 6,
