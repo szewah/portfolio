@@ -5,6 +5,7 @@ import { FaReact, FaPython, FaBootstrap, FaNodeJs } from 'react-icons/fa';
 import {DiDjango, DiJavascript1, DiHtml5} from 'react-icons/di';
 import {SiMysql, SiMongodb, SiFlutter, SiRedux, SiCsswizardry} from 'react-icons/si';
 import { IconContext } from "react-icons";
+import {Link} from 'react-router-dom';
 
 
 const useStyles = theme => ({
@@ -37,29 +38,50 @@ class About extends Component {
                                 solving problems through web technologies. 
                             </p>
                             <p className={classes.p}>
-                                Leverages background in video journalism and corporate 
-                                communications to build meaningful applications that help organizations improve their workflow 
-                                and make connections with their customers.                        
-                            </p>
-                            <p className={classes.p}>Currently looking for opportunities in sustainable finance, financing-for-all, or mobility-for-all.
+                                Leverages background in video journalism, documentaries and corporate 
+                                communications to build applications that help organizations build a narrative and make connections with their stakeholders.                        
                             </p>
                             <Box pt={4}>
                                 <IconContext.Provider value={{ color: "black", size:"2em", style: { padding: '10px' }}}>
                                     <div>
-                                        <FaReact/>
-                                        <SiRedux/>
-                                        <DiDjango/>
-                                        <FaPython/>
-                                        <DiJavascript1/>
-                                        <DiHtml5/>
+                                        <Link to="https://reactjs.org/">
+                                            <FaReact/>
+                                        </Link>
+                                        <Link to="https://react-redux.js.org/">
+                                            <SiRedux/>
+                                        </Link>
+                                        <Link to="https://www.djangoproject.com/">
+                                            <DiDjango/>
+                                        </Link>    
+                                        <Link to="https://www.python.org/">
+                                            <FaPython/>
+                                        </Link>
+                                        <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                                            <DiJavascript1/>
+                                        </Link>
+                                        <Link to="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+                                            <DiHtml5/>
+                                        </Link>
                                     </div>
                                     <div>
-                                        <FaNodeJs/>
-                                        <SiMysql/>
-                                        <SiMongodb/>
-                                        <SiFlutter/>
-                                        <FaBootstrap/>
-                                        <SiCsswizardry/>
+                                        <Link to="https://nodejs.org/en/">
+                                            <FaNodeJs/>
+                                        </Link>       
+                                        <Link to="https://www.mysql.com/">
+                                            <SiMysql/>
+                                        </Link>
+                                        <Link to="https://www.mongodb.com/">
+                                            <SiMongodb/>
+                                        </Link>
+                                        <Link to="https://flutter.dev/">
+                                            <SiFlutter/>    
+                                        </Link>
+                                        <Link to="https://getbootstrap.com/">
+                                            <FaBootstrap/>
+                                        </Link>
+                                        <Link to="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                                            <SiCsswizardry/>
+                                        </Link>    
                                     </div>
                                 </IconContext.Provider>
                             </Box>

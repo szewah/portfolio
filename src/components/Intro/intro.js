@@ -7,7 +7,7 @@ const styles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         height: '100vh',
-        // backgroundColor: 'khaki'
+        backgroundColor: '#ffc0cb'
     }
 }));
 
@@ -20,14 +20,13 @@ export default function Intro(){
     return (
         <div className={classes.root}>
              <Grid id="intro-grid" container alignItems="center" justify="center">
-                <img title="apple" src={require('../../icons/apple.svg')} alt="apple"/>
                 <Box>
                     <p id="name">Szewah Chin</p>
+                    <p id="chinesename">秦思华</p>
                     <Grid container alignItems="center" justify="center">
                         <Divider style={{backgroundColor: '#ffcc66', height: '3px', width: '70%'}}/>
                     </Grid>
-                    <p className="text">Bringing 15 years of communications experience</p>
-                    <p className="text">to Full Stack Web Development</p>
+                    <p className="text">Full Stack Web Developer</p>
                 </Box>
             </Grid>
         </div>
